@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: sans-serif;
+    color: #7b7bfd;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 760px;
+    }
+}
+
+/* ----------------------------------------------------------------------- */
+
+header .container h1{
+    text-align: center;
+}
+header .container .row{
+    border-bottom: 1px solid #9797ff;
+    padding-bottom: 12px;
+}
+header .container .row .top{
+    text-align: center;
+}
+header .container .row .top h1{
+    color: #7b7bfd;
+    padding-bottom: 10px;
+}
+header .container .row .top h3{
+    padding-bottom: 15px;
+    font-size: 22px;
+}
+header .container .row .top h4{
+    padding-bottom: 15px;
+}
+header .container .row .top p{
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 2px;
+}
+header .container .logo{
+    text-align: center;
+    padding-bottom: 8px;
+}
+header .container .logo img{
+    width: 130px;
+    max-width: 100%;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.section-1 .container .row{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-1 .container h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+}
+.section-1 .container .row .col-Text{
+    flex-basis: 65%;
+}
+.section-1 .container .row .col-Date{
+    flex-basis: 30%;
+}
+.section-1 .container .row .col-NO{
+    flex-basis: 20%;
+}
+@media (max-width: 700px) {
+    .section-1 .container .row .col-Text{
+        flex-basis: 44%;
+        text-align: center;
+    }
+}
+.section-1 .container .col label{
+    font-size: 18px;
+}
+
+.section-1 .container .col input:focus{
+    outline: none;
+}
+.section-1 .container .col input{
+    height: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px dotted blue;
+    padding-top: 2px;
+}
+
+.section-1 .container  input.Date{
+    width: 120px;
+    padding-left: 3px;
+}
+.section-1 .container input.NO{
+    width: 80px;
+    text-align: center;
+    color: red;
+}
+
+.section-1 .container .row-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.section-1 .container .row-2 .col{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.section-1 .container .row-2 .col-Text {
+    flex-basis: 70%;
+}
+.section-1 .container .row-2 .col-Text input.Text{
+    width: 63%;
+    max-width: 100% !important;
+    border-bottom: 1px dashed blue;
+    /* padding-top: 9px; */
+    padding-left: 2px;
+}
+
+.section-1 .container .row-2 .col-Age{
+    flex-basis: 20%;
+}
+.section-1 .container .row-2 .col-Age input{
+    width: 50px !important;
+    padding-left: 3px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.section-2{
+    padding-top: 20px;
+}
+.section-2 .container .row{
+    display: flex;
+    align-items: center;
+    gap: 1px 40px;
+}
+.section-2 .container .row .col-Hand{
+    flex-basis: 11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-2 .container .row .col-Frame{
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-2 .container .row .col-Case{
+    flex-basis: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-2 .container .row .col-Pocke{
+    flex-basis: 11%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-2 .container .row .col-String{
+    flex-basis: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.section-2 .container .row .col label{
+    font-size: 18px;
+}
+.section-2 .container .row .col input[type="text"]{
+    height: 18px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 17px;
+    font-weight: bold;
+    width: 140px;
+    max-width: 100% !important;
+    padding-left: 3px;
+    border-bottom: 1px dotted blue;
+    padding-top: 2px;
+}
+.section-2 .container .row .col input[type="text"]:focus{
+    outline: none;
+}
+.section-2 .container .row .col input[type="checkbox"]{
+    margin-left: 5px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.section-3{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.section-3 .container table{
+    width: 80%;
+    max-width: 100% !important;
+    border: 1px solid;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin: 10px auto;
+}
+.section-3 .container table tr th{
+    border-bottom: 1px solid;
+    padding-bottom: 7px;
+}
+.section-3 .container table tr th:not(:last-child){
+    border-right: 1px solid;
+}
+.section-3 .container table tr td input:focus{
+    outline: none;
+    border-bottom: 1px solid #7b7bfd;
+}
+.section-3 .container table tr td{
+    text-align: center;
+    padding: 0px 1px;
+}
+.section-3 .container table tr .td{
+    border-right: 1px solid;
+}
+.section-3 .container table tr td input{
+    width: 120px;
+    max-width: 100% !important;
+    text-align: center;
+    border: none;
+    height: 30px;
+    font-size: 18px;
+}
+.section-3 .container table tr .td1{
+    border-top: 1px solid;
+    padding: 1px 2px;
+}
+.le{
+    border-right: 1px solid;
+    text-align: left !important;
+    padding-left: 4px !important;
+}
+
+@media (max-width: 767px) {
+    .section-3 .container table tr td input{
+        width: 100px;
+        max-width: 100%;
+    }
+}
+
+.section-3 .container .top{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-3 .container .top .col{
+    font-size: 19px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.section-4{
+    padding-top: 10px;
+}
+.section-4 .container table{
+    width: 80%;
+    max-width: 100% !important;
+}
+
+.section-4 .container table tr td{
+    margin-left: 15px;
+}
+.section-4 .container label{
+    font-size: 18px;
+}
+.section-4 .container .all .col input{
+    height: 18px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 17px;
+    font-weight: bold;
+    width: 120px;
+    max-width: 100% !important;
+    padding-left: 3px;
+    border-bottom: 1px dotted blue;
+    padding-top: 2px;
+}
+.section-4 .container .all .col input:focus{
+    outline: none;
+}
+.section-4 .container .all{
+    display: flex;
+    align-items: center;
+    gap: 2px 40px;
+}
+.section-4 .container .all .col{
+    flex-basis: 28%;
+    display: flex;
+    align-items: center;
+    gap: 5px 5px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.section-5{
+    padding-top: 30px;
+}
+.section-5 .container .row{
+    display: flex;
+    align-items: center;
+    gap: 0px 20px;
+}
+.section-5 .container .row .col{
+    display: flex;
+}
+.section-5 .container .row .col-Ser{
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+}
+.section-5 .container .row .col-Ser input{
+    margin-left: 8px;
+}
+.section-5 .container .row .col-Amo{
+    flex-basis: 15%;
+}
+.section-5 .container .row .col-Adv{
+    flex-basis: 15%;
+}
+.section-5 .container .row .col-Dis{
+    flex-basis: 15%;
+}
+.section-5 .container .row .col-Rest{
+    flex-basis: 15%;
+}
+
+
+@media (max-width: 700px) {
+    .section-5 .container .row .col input[type="text"]{
+        width: 50px !important;
+    }
+}
+.section-5 .container .row .col label{
+    font-size: 18px;
+}
+.section-5 .container .row .col input[type="text"]{
+    height: 18px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-size: 17px;
+    font-weight: bold;
+    width: 45px;
+    max-width: 100% !important;
+    border-bottom: 1px blue solid;
+    padding-top: 2px;
+    text-align: center;
+    margin-left: 6px;
+}
+.section-5 .container .row .col input[type="text"]:focus{
+    outline: none;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.section-6{
+    padding-top: 60px;
+}
+.section-6 .container .row{
+    border: 1px solid #7b7bfd;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    width: fit-content;
+    padding-right: 12px;
+    border-radius: 5px;
+}
+.section-6 .container p{
+    font-size: 21px;
+    line-height: 24px;
+    width: fit-content;
+}
+@media (max-width: 1199px) {
+    .section-6 .container p{
+        font-size: 17px;
+        line-height: unset;
+    }
+}
+@media (max-width: 991px) {
+    .section-6 .container p{
+        font-size: 15px;
+    }
+}
+.section-6 .container p:last-child{
+    padding-top: 11px;
+}
+
+/* ----------------------------------------------------------------------- */
+
+.section-7{
+    padding-top: 40px;
+}
+.section-7 .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-7 .container .row .col h3{
+    font-size: 15px;
+    font-weight: normal;
+}
+.section-7 .container .row .col h2{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************ Buttons ****************************** */
+.buttons{
+    position: fixed;
+    bottom: 38px;
+    left: 50%;
+}
+.buttons button{
+    /* border: none; */
+    outline: none;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.buttons button.Print{
+    background: #179717;
+    color: #FFF;
+    border: 1px solid #179717;
+}
+.buttons button.Print:hover{
+    background-color: transparent;
+    color: #179717;
+    transition: .5s;
+}
+.buttons button.RESET{
+    color: #FFF;
+    background: #ff2d2d;
+    border: 1px solid #ff2d2d;
+}
+.buttons button.RESET:hover{
+    background-color: transparent;
+    color: #ff2d2d;
+    transition: .5s;
+}
